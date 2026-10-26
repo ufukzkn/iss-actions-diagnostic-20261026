@@ -1,0 +1,12 @@
+name: Minimal Actions availability diagnostic
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  diagnostic:
+    runs-on: ubuntu-latest
+    timeout-minutes: 1
+    steps:
+      - name: Confirm that a runner starts
+        run: echo "Minimal Actions availability diagnostic; no build, release or secrets."
